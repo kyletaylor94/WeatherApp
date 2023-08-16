@@ -21,7 +21,6 @@ class UserLocation: NSObject,CLLocationManagerDelegate,ObservableObject{
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestAlwaysAuthorization()
         manager.startUpdatingLocation()
-        
     }
     
     func requestLocation(){
@@ -38,7 +37,6 @@ class UserLocation: NSObject,CLLocationManagerDelegate,ObservableObject{
                 print(latitude)
             }
         }
-       
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

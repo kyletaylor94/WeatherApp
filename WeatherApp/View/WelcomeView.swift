@@ -51,20 +51,16 @@ struct WelcomeView: View {
                             Text("\(location.longitude)")
                                 .foregroundColor(.white)
                         }
-                 
                     }
-                        
                 }
                 .multilineTextAlignment(.center)
             }
         }
-        
     }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-    
         WelcomeView().environmentObject(UserLocation())
     }
 }
